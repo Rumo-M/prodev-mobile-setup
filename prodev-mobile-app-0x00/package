@@ -1,0 +1,15 @@
+{
+  "name": "prodev-mobile-app-0x00",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "expo start",
+    "reset-project": "rm -rf node_modules && npm install",
+    "build": "expo build",
+    "start": "expo start"
+  },
+  "dependencies": {
+    "expo": "~50.0.0",
+    "react": "18.2.0",
+    "react-native": "0.73.0"
+  }
+}
