@@ -12,3 +12,4 @@ Set up your first mobile application using the **Expo Router template**. Documen
 
 ```bash
 cd prodev-mobile-setup
+
