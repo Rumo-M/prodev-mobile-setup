@@ -1,0 +1,13 @@
+{
+  "name": "prodev-mobile-app-0x00",
+  "version": "1.0.0",
+  "description": "Set up your first mobile application using the **Expo Router template**. Document the scaffolding process and understand the file structure of a React Native application using Expo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
