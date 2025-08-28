@@ -11,3 +11,9 @@ A mobile app built with [Expo](https://expo.dev/) and React Native.
 
 ```bash
 npx create-expo-app@latest
+## Reset Project
+
+To reset the project and clear Expo cache, run:
+
+```bash
+npm run reset-project
