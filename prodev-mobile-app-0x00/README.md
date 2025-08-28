@@ -1,14 +1,13 @@
-# ProDev Mobile App 0x00 – First Expo App
 
-## 📱 Objective
+# prodev-mobile-app-0x00
 
-Set up your first mobile application using the **Expo Router template**. Document the scaffolding process and understand the file structure of a React Native application using Expo.
+A mobile app built with [Expo](https://expo.dev/) and React Native.
 
 ---
 
-## 🛠️ Steps for Scaffolding
+## 🚀 Project Setup
 
-1. **Navigate to Project Directory**
+1. Create a new Expo app:
 
 ```bash
-cd prodev-mobile-setup
+npx create-expo-app@latest
