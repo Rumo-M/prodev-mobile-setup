@@ -28,14 +28,21 @@ export default function Index() {
               <Image source={require("@/assets/images/Logo.png")} />
             </View>
 
+            {/* Text Group */}
+            <View style={styles.textGroup}>
+              <Text style={styles.textLarge}>Find your favorite place here</Text>
+              <Text style={styles.textSmall}>The best prices for over 2 </Text>
+              <Text style={styles.textSmall}>million properties worldwide</Text>
+            </View>
+
             {/* Additional Text Components */}
-            <Text style={styles.largeText}>
+            <Text style={styles.textLarge}>
               Typescript is great if you practice more
             </Text>
-            <Text style={styles.mediumText}>
+            <Text style={styles.textSmall}>
               React Native provides you a single codebase for cross platforms
             </Text>
-            <Text style={styles.smallText}>ALX is awesome</Text>
+            <Text style={styles.textSmall}>ALX is awesome</Text>
 
             {/* Buttons */}
             <View style={styles.buttonGroup}>
@@ -84,21 +91,18 @@ const styles = StyleSheet.create({
     padding: 20,
     marginBottom: 30,
   },
-  largeText: {
+  textGroup: {
+    alignItems: "center",
+    marginBottom: 20,
+  },
+  textLarge: {
     fontSize: 24,
     fontWeight: "bold",
     color: "white",
-    marginBottom: 8,
     textAlign: "center",
-  },
-  mediumText: {
-    fontSize: 18,
-    fontWeight: "500",
-    color: "white",
     marginBottom: 8,
-    textAlign: "center",
   },
-  smallText: {
+  textSmall: {
     fontSize: 14,
     fontWeight: "400",
     color: "white",
@@ -108,6 +112,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 20,
     marginTop: 30,
+    width: "100%",
+    paddingHorizontal: 20,
   },
   button: {
     flex: 1,
@@ -129,10 +135,5 @@ const styles = StyleSheet.create({
   continue: {
     alignItems: "center",
     paddingVertical: 20,
-  },
-  textSmall: {
-    fontSize: 14,
-    fontWeight: "400",
-    textAlign: "center",
   },
 });
