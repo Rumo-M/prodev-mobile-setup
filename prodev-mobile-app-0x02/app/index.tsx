@@ -1,5 +1,13 @@
 import React from "react";
-import { Text, View, StyleSheet, Image, ImageBackground, Dimensions, TouchableOpacity } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  Image,
+  ImageBackground,
+  Dimensions,
+  TouchableOpacity,
+} from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -7,7 +15,7 @@ export default function Index() {
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
         <ImageBackground
-          source={require("../assets/images/background-image.png")}
+          source={require("@/assets/images/background-image.png")}
           style={styles.background}
           resizeMode="cover"
         >
@@ -17,13 +25,33 @@ export default function Index() {
 
             {/* Company Logo */}
             <View style={styles.companyLogo}>
-              <Image source={require("../assets/images/Logo.png")} />
+              <Image source={require("@/assets/images/Logo.png")} />
             </View>
 
             {/* Additional Text Components */}
-            <Text style={styles.largeText}>Typescript is great if you practice more</Text>
-            <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
+            <Text style={styles.largeText}>
+              Typescript is great if you practice more
+            </Text>
+            <Text style={styles.mediumText}>
+              React Native provides you a single codebase for cross platforms
+            </Text>
             <Text style={styles.smallText}>ALX is awesome</Text>
+
+            {/* Buttons */}
+            <View style={styles.buttonGroup}>
+              <TouchableOpacity style={styles.button}>
+                <Text style={{ ...styles.textSmall, color: "black" }}>Join here</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity style={styles.transparentButton}>
+                <Text style={styles.textSmall}>Sign In</Text>
+              </TouchableOpacity>
+            </View>
+
+            {/* Continue Prompt */}
+            <View style={styles.continue}>
+              <Text style={{ color: "white" }}>Continue to home</Text>
+            </View>
           </View>
         </ImageBackground>
       </SafeAreaView>
@@ -74,6 +102,37 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "400",
     color: "white",
+    textAlign: "center",
+  },
+  buttonGroup: {
+    flexDirection: "row",
+    gap: 20,
+    marginTop: 30,
+  },
+  button: {
+    flex: 1,
+    backgroundColor: "white",
+    borderColor: "white",
+    borderWidth: 2,
+    borderRadius: 40,
+    paddingVertical: 15,
+    alignItems: "center",
+  },
+  transparentButton: {
+    flex: 1,
+    borderColor: "white",
+    borderWidth: 2,
+    borderRadius: 40,
+    paddingVertical: 15,
+    alignItems: "center",
+  },
+  continue: {
+    alignItems: "center",
+    paddingVertical: 20,
+  },
+  textSmall: {
+    fontSize: 14,
+    fontWeight: "400",
     textAlign: "center",
   },
 });
