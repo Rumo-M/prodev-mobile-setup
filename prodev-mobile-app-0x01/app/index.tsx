@@ -4,6 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
+      {/* Entry Screen Text */}
+      <Text style={styles.entryText}>Entry Screen - Awesome</Text>
+
+      {/* Additional Text Components */}
       <Text style={styles.largeText}>
         Typescript is great if you practice more
       </Text>
@@ -23,6 +27,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
+  },
+  entryText: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    marginBottom: 16,
   },
   largeText: {
     fontSize: 24,
