@@ -1,12 +1,11 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
+import { Stack } from "expo-router";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
-  return <View style={styles.container}>{children}</View>;
+export default function RootLayout() {
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+      }}
+    />
+  );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
