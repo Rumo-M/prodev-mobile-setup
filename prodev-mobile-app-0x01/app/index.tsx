@@ -8,6 +8,15 @@ export default function App() {
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
         <View style={styles.container}>
+          <View style={styles.container}>
+
+  <Text style={styles.largeText}>Typescript is great if you practice more</Text>
+  <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
+  <Text style={styles.smallText}>ALX is awesome</Text>
+
+  {/* existing content stays below */}
+</View>
+
 
           {/* --- THREE ADDITIONAL TEXT COMPONENTS --- */}
           <Text style={styles.largeText}>Typescript is great if you practice more</Text>
