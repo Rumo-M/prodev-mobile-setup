@@ -9,7 +9,7 @@ export default function App() {
       <SafeAreaView style={{ flex: 1 }}>
         <View style={styles.container}>
 
-          {/* Three Additional Text Components */}
+          {/* --- THREE ADDITIONAL TEXT COMPONENTS --- */}
           <Text style={styles.largeText}>Typescript is great if you practice more</Text>
           <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
           <Text style={styles.smallText}>ALX is awesome</Text>
@@ -28,18 +28,6 @@ export default function App() {
               keyboardType="email-address"
             />
           </View>
-          <View style={styles.container}>
-
-  {/* ADD THESE THREE EXACT TEXT COMPONENTS */}
-  <Text style={styles.largeText}>Typescript is great if you practice more</Text>
-  <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
-  <Text style={styles.smallText}>ALX is awesome</Text>
-
-  {/* existing content remains untouched */}
-  <Text style={styles.entryText}>Entry Screen - Awesome</Text>
-  {/* ...rest of your login screen */}
-</View>
-
 
           <View style={styles.passwordGroup}>
             <TextInput
