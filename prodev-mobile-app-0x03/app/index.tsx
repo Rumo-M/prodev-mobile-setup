@@ -1,12 +1,6 @@
 import React from "react";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
-import {
-  Text,
-  TextInput,
-  View,
-  TouchableOpacity,
-  Image,
-} from "react-native";
+import { Text, TextInput, View, TouchableOpacity, Image } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import styles from "./styles";
 
