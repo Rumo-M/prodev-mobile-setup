@@ -10,11 +10,20 @@ export default function App() {
         <View style={styles.container}>
           <View style={styles.container}>
 
+
+  {/* --- REQUIRED THREE TEXT COMPONENTS --- */}
   <Text style={styles.largeText}>Typescript is great if you practice more</Text>
   <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
   <Text style={styles.smallText}>ALX is awesome</Text>
 
-  {/* existing content stays below */}
+  {/* Entry Screen Text */}
+  <Text style={styles.entryText}>Entry Screen - Awesome</Text>
+
+  {/* Login Form */}
+  <Text style={styles.largeText}>Welcome Back!</Text>
+  <Text style={styles.placeholderText}>Enter your email and password to sign in.</Text>
+
+  {/* ...rest of your login form content */}
 </View>
 
 
