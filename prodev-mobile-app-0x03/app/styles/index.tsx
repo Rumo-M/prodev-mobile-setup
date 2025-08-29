@@ -1,73 +1,25 @@
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet } from "react-native";
 
-export default StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
     justifyContent: "center",
-    padding: 16,
-  },
-  background: {
-    flex: 1,
-    width: "100%",
-    height: Dimensions.get("window").height,
-  },
-  entryText: {
-    fontSize: 26,
-    fontWeight: "bold",
-    color: "white",
-    marginBottom: 20,
-    textAlign: "center",
-  },
-  companyLogo: {
-    width: "100%",
     alignItems: "center",
-    padding: 20,
-    marginBottom: 30,
-  },
-  textGroup: {
-    alignItems: "center",
-    marginBottom: 20,
+    backgroundColor: "#fff",
   },
   textLarge: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "white",
-    textAlign: "center",
-    marginBottom: 8,
+    marginBottom: 10,
   },
   textSmall: {
     fontSize: 14,
-    fontWeight: "400",
-    color: "white",
-    textAlign: "center",
+    color: "#666",
   },
-  buttonGroup: {
-    flexDirection: "row",
-    gap: 20,
-    marginTop: 30,
-    width: "100%",
-    paddingHorizontal: 20,
-  },
-  button: {
-    flex: 1,
-    backgroundColor: "white",
-    borderColor: "white",
-    borderWidth: 2,
-    borderRadius: 40,
-    paddingVertical: 15,
+  textGroup: {
+    marginTop: 20,
     alignItems: "center",
-  },
-  transparentButton: {
-    flex: 1,
-    borderColor: "white",
-    borderWidth: 2,
-    borderRadius: 40,
-    paddingVertical: 15,
-    alignItems: "center",
-  },
-  continue: {
-    alignItems: "center",
-    paddingVertical: 20,
   },
 });
+
+export default styles;
