@@ -4,23 +4,15 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-    <Text style={styles.largeText}>Typescript is great if you practice more</Text>
-<Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
-<Text style={styles.smallText}>ALX is awesome</Text>
+      {/* Additional Text Components */}
+      <View style={styles.textGroup}>
+        <Text style={styles.largeText}>Typescript is great if you practice more</Text>
+        <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
+        <Text style={styles.smallText}>ALX is awesome</Text>
+      </View>
 
       {/* Entry Screen Text */}
       <Text style={styles.entryText}>Entry Screen - Awesome</Text>
-
-      {/* Additional Text Components */}
-      <Text style={styles.largeText}>
-        Typescript is great if you practice more
-      </Text>
-      <Text style={styles.mediumText}>
-        React Native provides you a single codebase for cross platforms
-      </Text>
-      <Text style={styles.smallText}>
-        ALX is awesome
-      </Text>
     </View>
   );
 }
@@ -31,6 +23,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
+  },
+  textGroup: {
+    alignItems: 'center',
+    marginBottom: 16,
   },
   entryText: {
     fontSize: 26,
