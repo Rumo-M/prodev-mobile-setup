@@ -7,6 +7,7 @@ export default function App() {
       <Text style={styles.largeText}>Typescript is great if you practice more</Text>
       <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
       <Text style={styles.smallText}>ALX is awesome</Text>
+      <Text style={styles.entryText}>Entry Screen - Awesome</Text>
     </View>
   );
 }
@@ -17,6 +18,12 @@ const styles = StyleSheet.create({
     padding: 16,
     justifyContent: "center",
     alignItems: "center",
+  },
+  entryText: {
+    fontSize: 26,
+    fontWeight: "bold",
+    marginVertical: 12,
+    textAlign: "center",
   },
   largeText: {
     fontSize: 24,
